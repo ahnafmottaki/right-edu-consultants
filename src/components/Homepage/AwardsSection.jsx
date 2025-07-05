@@ -30,7 +30,7 @@ const awards = [
 const AwardsSection = () => {
   return (
     <section className="bg-white py-25 px-4 md:px-12">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="container text-center">
         {/* Headline */}
         <h2 className="text-3xl md:text-4xl font-bold text-[#0a2351] mb-4 font-poppins">
           Recognized for Business and Social Excellence
@@ -44,11 +44,11 @@ const AwardsSection = () => {
         </p>
 
         {/* Awards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="flex justify-center flex-wrap gap-6">
           {awards.map((award, index) => (
             <div
               key={index}
-              className="bg-gradient-to-tr from-[#f5f2e8] to-white shadow-md rounded-2xl p-4 transition transform hover:-translate-y-1 hover:shadow-xl group"
+              className="bg-gradient-to-tr from-[#f5f2e8] w-[300px] to-white shadow-md rounded-2xl px-5 py-7 transition transform hover:-translate-y-1 hover:shadow-xl group"
             >
               <img
                 src={award.image}

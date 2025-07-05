@@ -116,12 +116,12 @@ const Header = () => {
           {DROPDOWNS_LINKS.map(({ text, links }, key) => (
             <Dropdown key={key} text={text} links={links} />
           ))}
-          <NavLink
-            to={"/contact-us"}
+          <a
+            href="#contact-us"
             className={`cursor-pointer py-3 text-base  font-medium hover:text-indigo-900/60 text-indigo-900   transition-all duration-300 `}
           >
             Contact Us
-          </NavLink>
+          </a>
         </nav>
         <PrimaryButton>Apply Now</PrimaryButton>
       </header>

@@ -1,14 +1,22 @@
 import Divider from "../../Divider/Divider";
 import FooterGrid from "../../FooterGrid/FoooterGrid";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa6";
+import { IoLogoInstagram } from "react-icons/io5";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { AiFillTikTok } from "react-icons/ai";
 
 const DUMMY_FOOTER_SECTIONS = [
   {
     title: "Sitemap",
     links: ["About Us", "Blog", "Student Enrollment", "Careers"],
+    icons: null,
   },
   {
     title: "Help & Support",
     links: ["FAQ", "Terms & Conditions", "Privacy Policy"],
+    icons: null,
   },
   {
     title: "Community",
@@ -20,6 +28,14 @@ const DUMMY_FOOTER_SECTIONS = [
       "Twitter",
       "TikTok",
     ],
+    icons: [
+      <FaFacebookSquare className="text-2xl text-blue-600 group-hover:text-blue-500" />,
+      <FaYoutube className="text-2xl text-red-600 group-hover:text-red-500" />,
+      <IoLogoInstagram className="text-2xl text-purple-600 group-hover:text-purple-500" />,
+      <IoLogoLinkedin className="text-2xl text-blue-600 group-hover:text-blue-500" />,
+      <FaSquareXTwitter className="text-2xl text-gray-300 group-hover:text-white" />,
+      <AiFillTikTok className="text-2xl text-gray-300 group-hover:text-white" />,
+    ],
   },
 ];
 
@@ -30,7 +46,7 @@ export default function Footer() {
         <div className="flex justify-between max-md:flex-wrap gap-x-4 gap-y-10 px-6 sm:px-3 pb-10">
           {/* logo */}
           <div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-2">
               <img
                 src="/images/logo.png"
                 className="w-19 aspect-square"
@@ -42,7 +58,7 @@ export default function Footer() {
                 Right Edu <br /> Consultants
               </span>
             </div>
-            <div className="text-footer-text max-w-sm mt-3 text-sm">
+            <div className="text-footer-text max-w-sm mt-4 text-sm">
               Right Edu Consultants is a trusted Malaysia based education
               consultancy providing expert guidance for international students
               across Asia and Europe. Since our inception, we’ve been committed
@@ -55,6 +71,7 @@ export default function Footer() {
               key={section.title}
               title={section.title}
               links={section.links}
+              icons={section.icons}
             />
           ))}
         </div>
