@@ -14,6 +14,7 @@ const Dropdown = ({ text, links }) => {
           {links.map(({ text, path }, key) => (
             <li key={key} className="w-full px-2 rounded-lg overflow-hidden">
               <NavLink
+                end
                 to={path}
                 className={({ isActive }) =>
                   `text-base w-full font-poppins block py-2  pl-2   hover:bg-gray-200 hover:text-orange-600 ${

@@ -1,9 +1,9 @@
 import React from "react";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
-const CTASection = () => {
+const CTASection = ({ backgroundClass = "bg-[#f5f6f8]" }) => {
   return (
-    <section className="bg-[#f5f6f8] py-40 px-4 w-full">
+    <section className={" py-40 px-4 w-full " + backgroundClass}>
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="primary-heading mb-4">
           Start Your Study Abroad Journey

@@ -11,12 +11,12 @@ const AboutUs = () => {
       <About />
       {/* meet Ceo and Founder */}
       <MeetCEOAndFonder />
-      {/* vision and mission */}
-      <VisionMission />
       {/* our partners */}
       <OurPartners />
+      {/* vision and mission */}
+      <VisionMission />
       {/* CTA Section */}
-      <CTASection />
+      <CTASection backgroundClass="bg-white" />
     </section>
   );
 };

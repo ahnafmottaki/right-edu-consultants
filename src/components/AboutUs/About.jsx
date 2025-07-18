@@ -1,4 +1,5 @@
 import BackgroundWithText from "../BackgroundWithText";
+import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 import AboutImage from "/images/slide-1.jpg";
 
@@ -11,7 +12,7 @@ const About = () => {
       <h1 className="text-3xl text-center md:text-5xl font-poppins font-bold mb-4 text-white">
         About Our Company
       </h1>
-      <div className="text-gray-200  container my-15 grid grid-cols-2 text-xl   gap-15">
+      <div className="text-gray-200  container my-10 grid grid-cols-2 text-xl   gap-10">
         <p>
           Right Edu Consultants is your trusted gateway to global education.
           Established in 2014 as Smart Edu Tourism Malaysia, our journey evolved
@@ -40,7 +41,7 @@ const About = () => {
         </p>
       </div>
       <div className="text-center">
-        <button className="secondary-btn">Read More About Our Story</button>
+        <PrimaryButton>Read More About Our Story</PrimaryButton>
       </div>
     </BackgroundWithText>
   );
