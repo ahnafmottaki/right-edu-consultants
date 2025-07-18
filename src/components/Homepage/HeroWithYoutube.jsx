@@ -3,7 +3,7 @@ import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const HeroWithYoutube = () => {
   return (
-    <section className="container  grid grid-cols-2   bg-white px-6 md:px-12 py-25 gap-10">
+    <section className="container  grid grid-cols-2  items-center bg-white min-h-[380px] my-30 gap-10">
       {/* Left Column */}
       <div className=" text-left space-y-6 justify-self-center">
         <h1 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900">
@@ -27,7 +27,7 @@ const HeroWithYoutube = () => {
       </div>
 
       {/* Right Column - Responsive YouTube Video */}
-      <div className="relative  bg-red-400 rounded-lg overflow-hidden">
+      <div className="relative  h-full bg-red-400 rounded-lg overflow-hidden">
         <iframe
           className="h-full w-full"
           width="560"

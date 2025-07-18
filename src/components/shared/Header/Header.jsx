@@ -6,12 +6,13 @@ const DROPDOWNS_LINKS = [
   {
     text: "About us",
     links: [
-      { path: "/about", text: "About" },
+      { path: "/about", text: "About us" },
       {
         path: "/about/our-story",
         text: "Our Story",
       },
-      { path: "/about/our-team", text: "Our Partners" },
+      { path: "/about/our-team", text: "Our Team" },
+      { path: "/about/our-partners", text: "Our Partners" },
       { path: "/about/advisory-board", text: "Advisory Board" },
     ],
   },

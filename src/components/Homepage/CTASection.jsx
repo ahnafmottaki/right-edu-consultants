@@ -3,9 +3,9 @@ import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const CTASection = () => {
   return (
-    <section className="bg-[#f5f6f8] py-25 px-4 w-full">
+    <section className="bg-[#f5f6f8] py-40 px-4 w-full">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-poppins font-bold text-gray-800 mb-4">
+        <h2 className="primary-heading mb-4">
           Start Your Study Abroad Journey
         </h2>
         <p className="text-gray-700 text-base md:text-lg mb-6">

@@ -5,7 +5,7 @@
   --font-poppins: "Poppins", sans-serif;
   /* --font-source-code: "Source Code Pro", monospace; */
 
-  /* ! colors
+  /* ! colors */
   --color-primary: #1a237e;
   --color-primary-two: #1976d2;
 
@@ -19,7 +19,7 @@
   --color-neutral-two: #f5f5f5;
 
   --color-primary-text: #212121;
-  --color-primary-text-two: #616161; */
+  --color-primary-text-two: #616161;
 
   --color-footer-text: hsla(0, 0%, 100%, 0.8);
 }
@@ -40,4 +40,12 @@ html {
 
 .header {
   @apply flex justify-between items-center py-5;
+}
+
+.primary-heading {
+  @apply text-3xl font-poppins md:text-4xl font-bold text-gray-800  text-center;
+}
+
+.secondary-btn {
+  @apply px-6 py-2 bg-primary text-white rounded-xl hover:bg-primary-two transition-all;
 }

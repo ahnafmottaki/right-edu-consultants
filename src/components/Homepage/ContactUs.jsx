@@ -1,22 +1,13 @@
-import React from "react";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const ContactUs = () => {
   return (
-    <section className=" bg-white py-25 px-4" id="contact-us">
-      <h2 className="text-3xl font-poppins md:text-4xl font-bold text-gray-800  text-center mb-4">
-        Contact Us
-      </h2>
+    <section className=" bg-white my-30 px-4" id="contact-us">
+      <h2 className="primary-heading mb-4">Contact Us</h2>
       <p className="text-gray-600 text-base md:text-lg text-center mb-10">
-        We’d love to hear from you! Whether you have a question about studying
-        abroad, need assistance with an application, or just want to say hello —
-        we’re here to help.
+        We&apos;d love to hear from you! Whether you have a question about
+        studying abroad, need assistance with an application, or just want to
+        say hello — we&apos;re here to help.
       </p>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Column */}

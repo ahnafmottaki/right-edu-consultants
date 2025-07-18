@@ -29,10 +29,10 @@ const awards = [
 
 const AwardsSection = () => {
   return (
-    <section className="bg-white py-25 px-4 md:px-12">
+    <section className="bg-white  px-4">
       <div className="container text-center">
         {/* Headline */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0a2351] mb-4 font-poppins">
+        <h2 className="primary-heading mb-4">
           Recognized for Business and Social Excellence
         </h2>
         {/* Subheadline */}
